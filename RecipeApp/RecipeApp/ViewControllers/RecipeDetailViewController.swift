@@ -36,7 +36,7 @@ class RecipeDetailViewController: UIViewController, RecipeAddingDelegate {
         height = height < 25 ? 25 : height
         lc_Title_Height.constant = height
         
-        height = Utils.getTextHeight(tvContent.text, font: UIFont.systemFont(ofSize: 17, weight: .regular), constrainedToWidth: size.width)
+        height = Utils.getTextHeight(tvContent.text, font: UIFont.systemFont(ofSize: 17, weight: .regular), constrainedToWidth: size.width - 4)
         height += 20
         
         lc_ContentView_Height.constant = lc_Title_Height.constant + 200 + height
